@@ -6,12 +6,12 @@ Dieses Skript ist Teil des "Hack Let Loose"-Systems, das darauf ausgelegt ist, d
 ## Voraussetzungen
 Bevor du den Ban-Client installierst, stelle sicher, dass du folgende Voraussetzungen erfüllt hast:
 - Python 3.8 oder höher
-- `aiohttp` und `aio_pika` Bibliotheken
+- `aiohttp`, `requests` und `aio_pika` Bibliotheken
 - `python-dotenv` Bibliothek
 
 Diese Abhängigkeiten kannst du über pip installieren:
 ```bash
-pip install aiohttp aio_pika python-dotenv
+pip install aiohttp aio_pika python-dotenv requests
 ```
 
 ## Installation
