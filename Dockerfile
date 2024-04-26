@@ -10,4 +10,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY ban_client.py /app/
 COPY api_manager.py /app/
 # Führen Sie das Skript beim Start des Containers aus
-CMD ["python", "./api_manager.py"]
+CMD ["python", "/app/api_manager.py"]
