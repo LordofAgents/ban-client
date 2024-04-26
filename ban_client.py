@@ -16,8 +16,9 @@ logging.basicConfig(level=logging.INFO,
                         logging.StreamHandler()  # Log-Ausgabe in die Konsole
                     ])
 
-# Umgebungsvariablen laden
-load_dotenv()
+# Umgebungsvariablen laden, wenn .env existiert
+if os.path.exists(".env"):
+    load_dotenv()
 BASE_URLS = os.getenv('API_BASE_URLS').split(',')
 API_TOKEN = os.getenv('BEARER_TOKEN')
 API_USER = os.getenv('API_USER')
